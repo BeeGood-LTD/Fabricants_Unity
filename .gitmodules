@@ -1,0 +1,3 @@
+[submodule "com.beegood.sheetexporter"]
+	path = Packages/com.beegood.sheetexporter
+	url = https://gitlab.com/beegoodcompany/SheetExporter.git
