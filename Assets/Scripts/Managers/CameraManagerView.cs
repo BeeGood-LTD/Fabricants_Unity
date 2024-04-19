@@ -2,7 +2,7 @@
 
 public class CameraManagerView : MonoBehaviour
 {
-    private const float CameraSpeed = 30f;
+    private const float CameraSpeed = 100f;
 
     [SerializeField] private Transform TopAnchorCachedTransform;
     [SerializeField] private Transform BottomAnchorCachedTransform;
@@ -28,8 +28,8 @@ public class CameraManagerView : MonoBehaviour
         {
             var mouseDelta = camera.ScreenToViewportPoint(Input.mousePosition) - startCameraDelta;
             
-            var mouseResultDeltaX = startCameraPosition.x - mouseDelta.x * CameraSpeed;
-            var mouseResultDeltaZ = startCameraPosition.z - mouseDelta.y * CameraSpeed;
+            var mouseResultDeltaX = startCameraPosition.x + mouseDelta.x * CameraSpeed;
+            var mouseResultDeltaZ = startCameraPosition.z + mouseDelta.y * CameraSpeed;
             
             CheckBorder(ref mouseResultDeltaX, ref mouseResultDeltaZ);
             
