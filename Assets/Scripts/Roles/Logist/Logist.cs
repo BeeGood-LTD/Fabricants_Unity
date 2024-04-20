@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class Logist : MonoBehaviour
 {
+    public GameObject Items;
     public GameObject B1;
     public GameObject B2;
-    public CanvasGroup Group;
     public GameObject List;
     public Animator Animator;
     public TextMeshProUGUI Text1;
@@ -17,7 +17,7 @@ public class Logist : MonoBehaviour
 
     public void ActivateRole()
     {
-        Group.alpha = 1f;
+        Items.SetActive(true);
         B1.SetActive(true);
         B2.SetActive(true);
     }

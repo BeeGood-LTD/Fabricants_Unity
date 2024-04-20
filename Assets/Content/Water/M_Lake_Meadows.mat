@@ -101,7 +101,7 @@ Material:
     - _CameraDepthFade: -2.19
     - _CameraDepthFade1: 0.25
     - _ChromaticAberration: 0.1
-    - _ColorDepthFade: -1.5
+    - _ColorDepthFade: -4
     - _ColorDepthFade1: 4.28
     - _DisplaceStrength: 0
     - _DisplaceStrength1: 0.18
